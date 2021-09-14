@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Only Squircle Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        width: 50%;
+        display: grid;
+        place-items: center;
+        background-color: #090809;
+      }
+
+      #s1,
+      #s2,
+      #s3,
+      #s4 {
+        transform-box: fill-box;
+        transform-origin: center;
+        opacity: 0;
+        animation: squircleIncrease 4s ease-in-out infinite forwards;
+      }
+
+      @keyframes squircleIncrease {
+        20% {
+          opacity: 1;
+        }
+        60% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(1.75);
+        }
+      }
+
+      #s2 {
+        animation-delay: 1s;
+      }
+
+      #s3 {
+        animation-delay: 2s;
+      }
+
+      #s4 {
+        animation-delay: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <svg
+        width="100%"
+        min-height="0"
+        viewBox="0 0 2000 2000"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="only squircle">
+          <g id="s1">
+            <path
+              id="Vector"
+              d="M1000 1240.01C1105.17 1240.01 1163.64 1240.01 1201.82 1201.82C1240.01 1163.64 1240.01 1105.17 1240.01 1000C1240.01 894.836 1240.01 836.371 1201.82 798.185C1163.64 760 1105.17 760 1000 760C894.836 760 836.371 760 798.185 798.185C760 836.371 760 894.836 760 1000C760 1105.17 760 1163.64 798.185 1201.82C836.371 1240.01 894.836 1240.01 1000 1240.01Z"
+              stroke="#2FFC83"
+              stroke-width="3.98684"
+            />
+          </g>
+          <g id="s2">
+            <path
+              id="Vector_2"
+              d="M1000 1240.01C1105.17 1240.01 1163.64 1240.01 1201.82 1201.82C1240.01 1163.64 1240.01 1105.17 1240.01 1000C1240.01 894.836 1240.01 836.371 1201.82 798.185C1163.64 760 1105.17 760 1000 760C894.836 760 836.371 760 798.185 798.185C760 836.371 760 894.836 760 1000C760 1105.17 760 1163.64 798.185 1201.82C836.371 1240.01 894.836 1240.01 1000 1240.01Z"
+              stroke="#2FFC83"
+              stroke-width="3.98684"
+            />
+          </g>
+          <g id="s3">
+            <path
+              id="Vector_3"
+              d="M1000 1240.01C1105.17 1240.01 1163.64 1240.01 1201.82 1201.82C1240.01 1163.64 1240.01 1105.17 1240.01 1000C1240.01 894.836 1240.01 836.371 1201.82 798.185C1163.64 760 1105.17 760 1000 760C894.836 760 836.371 760 798.185 798.185C760 836.371 760 894.836 760 1000C760 1105.17 760 1163.64 798.185 1201.82C836.371 1240.01 894.836 1240.01 1000 1240.01Z"
+              stroke="#2FFC83"
+              stroke-width="3.98684"
+            />
+          </g>
+          <g id="s4">
+            <path
+              id="Vector_4"
+              d="M1000 1240.01C1105.17 1240.01 1163.64 1240.01 1201.82 1201.82C1240.01 1163.64 1240.01 1105.17 1240.01 1000C1240.01 894.836 1240.01 836.371 1201.82 798.185C1163.64 760 1105.17 760 1000 760C894.836 760 836.371 760 798.185 798.185C760 836.371 760 894.836 760 1000C760 1105.17 760 1163.64 798.185 1201.82C836.371 1240.01 894.836 1240.01 1000 1240.01Z"
+              stroke="#2FFC83"
+              stroke-width="3.98684"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
